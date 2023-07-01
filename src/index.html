@@ -6,8 +6,38 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Carter+One&family=Original+Surfer&display=swap" rel="stylesheet">
+  <link  href="/src/assets/css/estilos.css"/>
 </head>
 <body>
+  <h1>Juego del Ahorcado</h1>
+        <br>
+        
+        <h4 id="visor"><span class="blancocuadro"> Adivina la palabra!</span></h4>
+        
+        <main>
+          <div>
+            <br>
+            <div id="tablero"></div>
+            <br/>
+            <h4 id="visor"><span >Ingresa una letra...</span></h4>
+     
+            <div id="cuadro" class="casillaIngreso">            
+                <input id="entrada" type="text" name="nombre" maxlength="1" />
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div id="status" ></div>
+          </div>  
+            <img id="imagen" class="imag" src="/src/assets/img/ahorcado6.png"/>
+        </main>     
+        <button id="jugar" >Reiniciar</button>
+
+
   <app-root></app-root>
 </body>
+<script src="/src/assets/js/ahorcado.js"></script>
 </html>
